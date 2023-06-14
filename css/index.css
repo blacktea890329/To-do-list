@@ -1,0 +1,19 @@
+ul {
+    list-style-type: none;
+}
+
+input,button{
+    cursor:pointer;
+}
+
+.btn_delet{
+
+}
+
+label{
+
+}
+
+p{
+    display: inline;
+}
