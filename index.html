@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<script src="index.js"></script>
 <html>
     <head>
         <meta charset="utf-8">
@@ -8,15 +7,15 @@
     </head>
     <body>
         <dev class="typein">
-            <p>代辦事項</p>       
+            <h1>代辦事項</h1>       
             <input type="text" class="todo_input" placeholder="輸入代辦事項"/>
-            <input type="button" class="todo_add" value="ADD++"/> 
+            <button class="todo_add">ADD++</button>
         </dev>
         <hr/>
         <dev class="list">
             <ul clsaa="todo">
                 <li class="todolist" >
-                    <label>
+                    <label class="todo_title">
                         <input type="checkbox" class="todo_check" style="display:inline;">
                         <p>first</p>
                     </label>
@@ -26,3 +25,4 @@
         </dev>
     </body>
 </html>
+<script src="index.js"></script>
