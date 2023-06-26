@@ -21,6 +21,14 @@ function addToto(){
         <p>'+inputValue+'</p>\
     </label>\
     <button class="btn-delete"></button>'
-    document.querySelector('.todolist').appendChild(newTodo);
+    document.querySelector('.todo').appendChild(newTodo);
     document.querySelector('.todo_input').value = '';
 }
+
+document.querySelector('.todo').addEventListener('click', function (event) {
+  const target = event.target;
+  // 刪除 todo
+  if (target.classList.contains('btn-delete')) {
+    target.parentNode.remove()
+  }
+});
