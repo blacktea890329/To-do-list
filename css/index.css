@@ -49,8 +49,13 @@ div{
 
 li{
     margin-bottom: 2%;
+    
 }
 
 .show{
     flex-grow: 1;
+}
+
+.todo_title{
+    background-color: whitesmoke;
 }
