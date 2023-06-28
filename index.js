@@ -10,17 +10,15 @@ document.querySelector('.todo_input').addEventListener("keypress", function (e) 
 
 function addToto(){
     const inputValue=document.querySelector('.todo_input').value;
-    alert(inputValue);
     // 檢查輸入欄位是否為空值，trim() 可清除字串前後空白
     if (inputValue.trim().length === 0) return;
     // 新增 todo
     const newTodo = document.createElement('li');
     const newTodotext = inputValue;
     newTodo.innerHTML='<label class="todo_title">\
-        <input type="checkbox" class="todo_check" style="display:inline;">\
         <p>'+inputValue+'</p>\
     </label>\
-    <button class="btn-delete"></button>'
+    <button class="btn_delete">X</button>'
     document.querySelector('.todo').appendChild(newTodo);
     document.querySelector('.todo_input').value = '';
 }
@@ -28,7 +26,7 @@ function addToto(){
 document.querySelector('.todo').addEventListener('click', function (event) {
   const target = event.target;
   // 刪除 todo
-  if (target.classList.contains('btn-delete')) {
+  if (target.classList.contains('btn_delete')) {
     target.parentNode.remove()
   }
 });
