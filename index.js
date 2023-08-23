@@ -30,3 +30,7 @@ document.querySelector('.todo').addEventListener('click', function (event) {
     target.parentNode.remove()
   }
 });
+
+function time(){
+  const t=new Date;
+}
